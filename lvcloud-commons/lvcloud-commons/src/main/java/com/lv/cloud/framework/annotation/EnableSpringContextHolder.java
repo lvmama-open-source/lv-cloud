@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
- * 启用JedisCluster
+ * 启用SpringContextHolder
  * @author xiaoyulin
  *
  */
