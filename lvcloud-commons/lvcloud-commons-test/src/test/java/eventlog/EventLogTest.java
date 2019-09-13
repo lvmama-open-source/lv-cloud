@@ -21,7 +21,7 @@ public class EventLogTest {
 
 	@Test
 	public void testAdd(){
-		LOG.errorLogicEventLog("bussiness_code","error_code","11111","ord","test","test detail.");
+		LOG.errorLogicEventLog("bussiness_code","error_code","11111","bussinessTag","test","test detail.");
 	}
 
 }

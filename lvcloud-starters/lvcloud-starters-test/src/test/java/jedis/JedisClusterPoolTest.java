@@ -20,7 +20,7 @@ import java.util.Map;
 
 @WebAppConfiguration
 @RunWith(SpringRunner.class)
-@TestPropertySource(locations={"classpath:application.properties"})
+@TestPropertySource(locations={"classpath:jedis.properties"})
 @EnableJedisCluster
 public class JedisClusterPoolTest {
 	

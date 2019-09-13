@@ -5,32 +5,25 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.lvbility</groupId>
     <artifactId>lvcloud-commons-test</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-
-<!--	<parent>
-		<groupId>com.lv.cloud</groupId>
-		<artifactId>lvcloud-commons</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>-->
-
+	<version>1.0.0-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.lv.cloud</groupId>
 			<artifactId>lvcloud-starter</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>2.1.6.RELEASE</version>
 			<scope>test</scope>
-			<version>2.1.2.RELEASE</version>
 		</dependency>
 
 	</dependencies>
 
-<!--<build>
+	<build>
 		<finalName>lvcloud-commons-test</finalName>
 		<plugins>
 			<plugin>
@@ -46,6 +39,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build>-->
+	</build>
 
 </project>

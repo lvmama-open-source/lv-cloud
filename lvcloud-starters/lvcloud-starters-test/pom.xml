@@ -4,45 +4,38 @@
 		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.lvbility</groupId>
-    <artifactId>lvcloud-connectors-test</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-
-<!--	<parent>
-		<groupId>com.lv.cloud</groupId>
-		<artifactId>lvcloud-commons</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>-->
-
+    <artifactId>lvcloud-starters-test</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.lv.cloud</groupId>
-			<artifactId>lvcloud-jedis-connector</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
-		<!--<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-configuration-processor</artifactId>
+			<artifactId>lvcloud-starter</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-			<optional>true</optional>
-		</dependency>-->
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lv.cloud</groupId>
+			<artifactId>lvcloud-jedis</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<version>2.1.6.RELEASE</version>
 			<scope>test</scope>
-			<version>2.1.2.RELEASE</version>
 		</dependency>
 
 	</dependencies>
 
 	<build>
-		<finalName>lvcloud-connectors-test</finalName>
+		<finalName>lvcloud-starters-test</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -61,10 +54,6 @@
 		<resources>
 			<resource>
 				<directory>src/main/resources</directory>
-				<!--<excludes>-->
-					<!--&lt;!&ndash; <exclude>**/*.properties</exclude> &ndash;&gt;-->
-					<!--<exclude>*.properties</exclude>-->
-				<!--</excludes>-->
 			</resource>
 			<resource>
 				<directory>src/main/java</directory>

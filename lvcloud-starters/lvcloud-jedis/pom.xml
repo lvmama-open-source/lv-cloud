@@ -5,25 +5,33 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.lv.cloud</groupId>
-		<artifactId>lvcloud-commons-parent</artifactId>
+		<artifactId>lvcloud-starters</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>lvcloud-starter</artifactId>
-	<name>lvcloud-starter</name>
-	<description>Lv Cloud Starter</description>
+
+	<artifactId>lvcloud-jedis</artifactId>
+	<name>lvcloud-jedis</name>
+	<description>Lv Cloud Jedis Connector</description>
 	<!--<url>https://projects.spring.io/spring-cloud</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
 		<url>https://www.spring.io</url>
 	</organization>-->
+	<properties>
+		<lvcloud.version>1.0.0-SNAPSHOT</lvcloud.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>com.lv.cloud</groupId>
-			<artifactId>lvcloud-commons</artifactId>
+			<artifactId>lvcloud-starter</artifactId>
+			<version>${lvcloud.version}</version>
 		</dependency>
+
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.8.2</version>
 		</dependency>
 	</dependencies>
 

@@ -4,16 +4,48 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+	<parent>
+		<groupId>org.springframework.cloud</groupId>
+		<artifactId>spring-cloud-build-dependencies</artifactId>
+		<version>2.1.6.RELEASE</version>
+	</parent>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<lombok.version>1.16.14</lombok.version>
+	</properties>
+
 	<groupId>com.lv.cloud</groupId>
-	<artifactId>lv-cloud</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<artifactId>lvcloud-build</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>./lvcloud-build-dependencies</module>
 		<module>./lvcloud-commons</module>
-		<module>./lvcloud-connectors</module>
-		<module>./lvcloud-flow</module>
+		<module>./lvcloud-starters</module>
 	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>test-compile</phase>
+						<goals>
+							<goal>test-jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<excludes>
+						<exclude>**/*.properties</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+
 </project>  
 
