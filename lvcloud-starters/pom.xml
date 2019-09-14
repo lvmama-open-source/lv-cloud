@@ -10,6 +10,7 @@
 	</parent>
 	<artifactId>lvcloud-starters</artifactId>
 	<name>lvcloud-starters</name>
+	<packaging>pom</packaging>
 	<description>Lv Cloud starters</description>
 	<!--<url>https://projects.spring.io/spring-cloud</url>
 	<organization>
