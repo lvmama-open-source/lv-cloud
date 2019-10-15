@@ -1,6 +1,8 @@
 /*
 !lvcloud-druid-mybatis
 !lvcloud-jedis
+!lvcloud-kafka
+!lvcloud-event-log
 !lvcloud-starters-test
 
 !.gitignore

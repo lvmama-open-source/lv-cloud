@@ -22,6 +22,8 @@
 	<modules>
 		<module>lvcloud-jedis</module>
 		<module>lvcloud-druid-mybatis</module>
+		<module>lvcloud-kafka</module>
+		<module>lvcloud-event-log</module>
 	</modules>
 
 	<build>
