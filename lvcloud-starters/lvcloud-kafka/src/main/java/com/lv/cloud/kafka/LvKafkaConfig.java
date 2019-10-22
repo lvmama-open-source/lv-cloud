@@ -1,6 +1,7 @@
 package com.lv.cloud.kafka;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -29,11 +30,13 @@ public class LvKafkaConfig {
     }
 
     @Bean
+    @ConditionalOnMissingBean
     public RecordMessageConverter converter() {
         return new StringJsonMessageConverter();
     }
 
     @Bean
+    @ConditionalOnMissingBean
     public BatchMessagingMessageConverter batchConverter() {
         return new BatchMessagingMessageConverter(converter());
     }
