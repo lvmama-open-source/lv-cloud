@@ -14,7 +14,7 @@
 	<description>Lv Cloud Commons</description>
 	<properties>
 		<okhttp3.version>3.6.0</okhttp3.version>
-		<apachehttpclient.version>4.5.5</apachehttpclient.version>
+		<apachehttpclient.version>4.5.13</apachehttpclient.version>
 	</properties>
 	<dependencies>
 		<dependency>
